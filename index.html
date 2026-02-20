@@ -13,7 +13,7 @@
 <body>
     <div class="w-[560px] bg-slate-800 p-8 rounded-2xl shadow-[0_0_30px_rgba(139,92,246,0.3)]">
     <header>
-        <h1 class="text-2xl font-bold text-center text-indigo-300 mb-7">Todo List</h1>
+        <h1 class="text-2xl text-white font-bold text-center text-indigo-300 mb-7">Todo List</h1>
     </header>
 
      <!-- main content -->
@@ -21,10 +21,10 @@
         <section>
             <form flex class="flex gap-4 mb-4">
                  <!-- todo input -->
-                <input class=" px-8 border p-2 bg-slate-900 border-slate-600 rounded-lg text-white focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500" type="text" id="todo-input" placeholder="Enter a new todo item...">
+                <input class=" px-8 border p-2 bg-slate-900 border-indigo-600 rounded-lg text-white focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500" type="text" id="todo-input" placeholder="Enter a new todo item...">
 
                 <!-- Date Input -->
-                 <input class="px-4 border p-2 bg-slate-900 border-slate-600 rounded-lg text-white focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500" type="date" id="todo-date" placeholder="enter due date">
+                 <input class="px-4 border p-2 bg-slate-900 border-indigo-600 rounded-lg text-white focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500" type="date" id="todo-date" placeholder="enter due date">
 
                  <!-- add button -->
                  <button class="bg-indigo-500 hover:bg-slate-600 text-white font-semibold py-2 px-4 rounded" type="button" onclick="addTodo()"
@@ -36,40 +36,37 @@
              
         </section>
         <!-- action section -->
-         <section class="flex pt-2 justify-between">
-            <!-- clear all button -->
-             <button class="border rounded-lg border-slate-700 p-2 bg-slate-700 font-normal text-white">FILTER</button>
+         <section class="flex pt-2  mb-4 justify-between">
+            <!-- filter button -->
+             <button class="border rounded-lg border-slate-700 p-2 bg-slate-700 font-bold text-blue-500">FILTER</button>
 
-             <!-- filter options -->
+             <!-- clear all options -->
               <button class="border rounded-lg border-indigo-400 p-2 bg-indigo-400 text-black font-semibold hover:bg-slate-600">CLEAR ALL</button>
          </section>
+        
 
          <!-- todo list section -->
-            <section class="bg-slate-900 rounded-xl overflow-hidden">
-                <table class="w-full text-center">
-                <thead class="bg-slate-800 text-slate-400 text-sm">
-
-                <h1 class="text-2xl font-bold rounded-xl text-center text-slate-400 text-sm">
+         <section class="bg-slate-900 rounded-xl overflow-hidden">
+            <table class="w-full text-center">
+                <thead class="bg-slate-900 text-slate-400 text-sm">
                     <tr class="text-slate-400">
-                    <th class="py-2">TASK</th>
+                    <th class="py-3">TASK</th>
                     <th>DUE DATE</th>
                     <th>STATUS</th>
                     <th>ACTIONS</th>
-                    </tr >
-                </h1 >
-                
+                    </tr >               
 
                 </thead>
                 <tbody class="pt-4" id="todo-list">
                 
                     <!-- todo item will be dynamically added here -->
-                    <tr class="border-t border-slate-700">
-                     <td colspan="4" class="py-6 text-center text-slate-400">No todos available</td>
-                </td>
-                </tr>
+                    <tr class="border-t border-slate-700 ">
+                     <td colspan="4" class="py-6 text-center text-slate-400">No Todos Available</td>
+                   </td>
+                 </tr>
                 </tbody>
-                </table>
-            </section>
+            </table>
+        </section>
     </main>
     <!-- footer content -->
     <footer>
